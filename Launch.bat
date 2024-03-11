@@ -1,0 +1,1 @@
+"C:\Program Files\Epic Games\UE_4.26\Engine\Binaries\Win64\UE4Editor.exe" "C:\CG Spectrum\TantrumRev2\TantrumnRev2\Tantrumn.uproject" -game
