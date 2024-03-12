@@ -152,6 +152,7 @@ void ATantrumnPlayerController::RequestMoveForward(float AxisValue)
 {
 	if (!CanProcessRequest())
 	{
+		UE_LOG(LogTemp, Warning, TEXT("RequestMoveForward Cannot be processed"));
 		return;
 	}
 
@@ -160,6 +161,7 @@ void ATantrumnPlayerController::RequestMoveForward(float AxisValue)
 		FRotator const ControlSpaceRot = GetControlRotation();
 		// transform to world space and add it
 		GetPawn()->AddMovementInput(FRotationMatrix(ControlSpaceRot).GetScaledAxis(EAxis::X), AxisValue);
+		UE_LOG(LogTemp, Warning, TEXT("RequestMoveForward processed"));
 	}
 }
 
